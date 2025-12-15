@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="#hero" class="logo">Mi Portafolio</a>
+            <ul id="nav-menu">
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <button id="menu-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <h1>Bienvenido a mi Portafolio</h1>
+            <p>Un desarrollador apasionado creando soluciones web modernas y atractivas.</p>
+            <a href="#contacto" class="cta-button">Contáctame</a>
+        </section>
+
+        <section id="sobre-mi">
+            <div class="container">
+                <img src="https://via.placeholder.com/300x300" alt="Foto de perfil">
+                <div class="about-me-content">
+                    <h2>Sobre Mí</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <p>Mi pasión es combinar diseño y tecnología para construir experiencias de usuario excepcionales.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos">
+            <div class="container">
+                <h2>Proyectos</h2>
+                <div class="grid">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" alt="Proyecto 1">
+                        <div class="card-content">
+                            <h3>Proyecto 1</h3>
+                            <p>Una breve descripción de este increíble proyecto. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="#">Ver más <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" alt="Proyecto 2">
+                        <div class="card-content">
+                            <h3>Proyecto 2</h3>
+                            <p>Una breve descripción de este increíble proyecto. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                            <a href="#">Ver más <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200" alt="Proyecto 3">
+                        <div class="card-content">
+                            <h3>Proyecto 3</h3>
+                            <p>Una breve descripción de este increíble proyecto. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                            <a href="#">Ver más <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="habilidades">
+            <div class="container">
+                <h2>Habilidades</h2>
+                <ul>
+                    <li><i class="fab fa-html5"></i> HTML</li>
+                    <li><i class="fab fa-css3-alt"></i> CSS</li>
+                    <li><i class="fab fa-js-square"></i> JavaScript</li>
+                    <li><i class="fab fa-react"></i> React</li>
+                    <li><i class="fab fa-node-js"></i> Node.js</li>
+                    <li><i class="fab fa-python"></i> Python</li>
+                    <li><i class="fab fa-git-alt"></i> Git</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="testimonios">
+            <div class="container">
+                <h2>Testimonios</h2>
+                <div class="carousel">
+                    <div class="testimonial active">
+                        <p>"Excelente trabajo, muy profesional y atento a los detalles. ¡Totalmente recomendado!"</p>
+                        <cite>Cliente Satisfecho 1</cite>
+                    </div>
+                    <div class="testimonial">
+                        <p>"El proyecto fue entregado a tiempo y superó nuestras expectativas. Gran comunicación."</p>
+                        <cite>Cliente Satisfecho 2</cite>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Un desarrollador con mucho talento y una gran actitud. Ha sido un placer trabajar juntos."</p>
+                        <cite>Cliente Satisfecho 3</cite>
+                    </div>
+                </div>
+                <div class="carousel-buttons">
+                    <button id="prev-btn" aria-label="Anterior testimonio"><i class="fas fa-chevron-left"></i></button>
+                    <button id="next-btn" aria-label="Siguiente testimonio"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <div class="container">
+                <h2>Contacto</h2>
+                <form>
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Mensaje" required></textarea>
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <ul class="social-links">
+                <li><a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+                <li><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+            <p>&copy; 2026 Mi Portafolio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
